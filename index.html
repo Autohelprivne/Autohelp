@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СТО Autohelp</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      background: #0f0;
+      color: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #0f0;
+      margin-bottom: 20px;
+    }
+    .services, .contacts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,255,0,0.3);
+    }
+    .form input, .form textarea, .form button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    .form button {
+      background: #0f0;
+      color: #111;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>СТО Autohelp</header>
+
+  <section id="services">
+    <h2>Наші послуги</h2>
+    <div class="services">
+      <div class="card">Діагностика – від 500 грн</div>
+      <div class="card">Заміна масла – від 800 грн</div>
+      <div class="card">Ремонт двигуна – від 3000 грн</div>
+      <div class="card">Шиномонтаж – від 600 грн</div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Про нас</h2>
+    <p>Ми – професійна команда з багаторічним досвідом. Працюємо швидко, якісно та з гарантією.</p>
+  </section>
+
+  <section id="contacts">
+    <h2>Контакти</h2>
+    <div class="contacts">
+      <div>
+        <p><b>Телефон:</b> +38 (067) 123-45-67</p>
+        <p><b>Адреса:</b> м. Київ, вул. Прикладна, 10</p>
+        <div class="form">
+          <h3>Онлайн-запис</h3>
+          <form action="https://formspree.io/f/mwkzjvge" method="POST">
+            <input type="text" name="name" placeholder="Ваше ім'я" required>
+            <input type="tel" name="phone" placeholder="Телефон" required>
+            <textarea name="message" placeholder="Опис проблеми" required></textarea>
+            <button type="submit">Записатися</button>
+          </form>
+        </div>
+      </div>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.978!2d30.523!3d50.450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf!2z0JrQuNC10L3QtdC00YHQutC40Lkg0L_Qu9C40YbQsCwgMTAsINCa0LjQtdC90LXQtNGHLCAwMDAwMA!5e0!3m2!1suk!2sua!4v000000000"></iframe>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
